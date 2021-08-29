@@ -17,7 +17,7 @@ const User =()=>{
     return (
         <div className={styles.user_global}>
             <div className={styles.test} onClick={onClickTest}>
-                {test}
+                {test}123
             </div>
         </div>
     );
