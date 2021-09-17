@@ -2,7 +2,7 @@ import React, { useCallback, useMomo, useState } from 'react';
 import { Button, Tooltip, Radio, Input, Space, Carousel } from 'antd';
 import styles from './index.less';
 
-const User = () => {
+const Gino = () => {
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
@@ -16,4 +16,4 @@ const User = () => {
         </div>
     );
 };
-export default User;
+export default Gino;
