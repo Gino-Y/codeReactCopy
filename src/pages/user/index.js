@@ -13,6 +13,8 @@ const User = () => {
             </div>
             <div className={styles.secondLine}></div>
             <div className={styles.clear}></div>
+            div格高度200px宽度300px，里面存在hello world
+            你好世界文字，字体楷体，文字大小30px，上下左右居中，颜色蓝色（非正蓝），文字加粗
         </div>
     );
 };
