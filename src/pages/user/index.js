@@ -6,9 +6,9 @@ const User = () => {
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
-                <div className={styles.first}></div>
-                <div className={styles.second}></div>
-                <div className={styles.third}></div>
+                <div className={styles.first}>u0989080士大夫</div>
+                <div className={styles.second}>有人提议5345345hherhh</div>
+                <div className={styles.third}>34534gsgdfgd</div>
                 <div className={styles.clear}></div>
             </div>
             <div className={styles.secondLine}></div>
