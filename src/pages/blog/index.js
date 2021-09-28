@@ -4,6 +4,11 @@ import styles from './index.less';
 import icon from '../../image/iconSkokov.png';
 import blogImg from '../../image/blogImg.png';
 import girlxx01 from '../../image/girlxx01.png';
+import girlxx02 from '../../image/girlxx02.png';
+import girlxx03 from '../../image/girlxx03.png';
+import girlxx04 from '../../image/girlxx04.png';
+import girlxx05 from '../../image/girlxx05.png';
+import girlxx06 from '../../image/girlxx06.png';
 
 const Blog = () => {
     return (
@@ -27,27 +32,30 @@ const Blog = () => {
             </div>
             <div className={styles.mainLine}>
                 <div className={styles.mainBox}>
-                    <div className={styles.explain}></div>
-                    <div className={styles.blogBox}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                    <div className={styles.explain}>
+                        “这里的资源库虽然不大，虽然没有什么权威，但是都是些可以举一反三的致命素材”.
+                        <div className={styles.littleFont}>John Wooden</div>
                     </div>
                     <div className={styles.blogBox}>
                         <img src={girlxx01} className={styles.girlxx01} />
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                        <img src={girlxx02} className={styles.girlxx01} />
+                    </div>
+                    <div className={styles.blogBox}>
+                        <img src={girlxx03} className={styles.girlxx01} />
                     </div>
                     <div className={styles.clear}></div>
                 </div>
                 <div className={styles.mainBox}>
                     <div className={styles.blogBoxT2}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                        <img src={girlxx04} className={styles.girlxx01} />
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                        <img src={girlxx05} className={styles.girlxx01} />
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                        <img src={girlxx06} className={styles.girlxx01} />
                     </div>
                     <div className={styles.clear}></div>
                 </div>
