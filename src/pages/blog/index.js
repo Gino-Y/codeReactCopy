@@ -37,13 +37,79 @@ const Blog = () => {
                         <div className={styles.littleFont}>John Wooden</div>
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx01} className={styles.girlxx01} />
+                        <div className={styles.imgBox}>
+                            <img src={girlxx01} className={styles.girlxx01} />
+                        </div>
+                        <div className={styles.content}>
+                            <div className={styles.introduction}>
+                                令人鼓舞的动感体验！发自内心的飘逸~
+                                <br />
+                                平面设计
+                            </div>
+                            <div className={styles.introductionOne}>
+                                When it comes to parallax scrolling,the that
+                                separates good and bad choices is pretty thin. A
+                                while back parallax was being used to deliver an
+                                explosion of ilimints floating around the
+                                screen.
+                            </div>
+                        </div>
+                        <div className={styles.like}>❤ 15</div>
+                        <div className={styles.info}>
+                            by John Doe / 4 comments / Oct. 12. 2013
+                        </div>
+                        <div className={styles.clear}></div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx02} className={styles.girlxx01} />
+                        <div className={styles.imgBox}>
+                            <img src={girlxx02} className={styles.girlxx01} />
+                        </div>
+                        <div className={styles.content}>
+                            <div className={styles.introduction}>
+                                令人鼓舞的动感体验！发自内心的飘逸~
+                                <br />
+                                平面设计
+                            </div>
+                            <div className={styles.introductionOne}>
+                                When it comes to parallax scrolling,the that
+                                separates good and bad choices is pretty thin. A
+                                while back parallax was being used to deliver an
+                                explosion of ilimints floating around the
+                                screen.
+                            </div>
+                        </div>
+                        <div className={styles.like}>❤ 15</div>
+                        <div className={styles.info}>
+                            by John Doe / 4 comments / Oct. 12. 2013
+                        </div>
+                        <div className={styles.clear}></div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.blogBox}>
-                        <img src={girlxx03} className={styles.girlxx01} />
+                        <div className={styles.imgBox}>
+                            <img src={girlxx03} className={styles.girlxx01} />
+                        </div>
+                        <div className={styles.content}>
+                            <div className={styles.introduction}>
+                                令人鼓舞的动感体验！发自内心的飘逸~
+                                <br />
+                                平面设计
+                            </div>
+                            <div className={styles.introductionOne}>
+                                When it comes to parallax scrolling,the that
+                                separates good and bad choices is pretty thin. A
+                                while back parallax was being used to deliver an
+                                explosion of ilimints floating around the
+                                screen.
+                            </div>
+                        </div>
+                        <div className={styles.like}>❤ 15</div>
+                        <div className={styles.info}>
+                            by John Doe / 4 comments / Oct. 12. 2013
+                        </div>
+                        <div className={styles.clear}></div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.clear}></div>
                 </div>
