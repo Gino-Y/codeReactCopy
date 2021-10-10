@@ -1,5 +1,5 @@
 import React, { useCallback, useMomo, useState } from 'react';
-import { Button, Tooltip, Radio, Input, Space, Carousel } from 'antd';
+import { Button, Tooltip, Radio, Input, Space, Carousel, Checkbox } from 'antd';
 import styles from './index.less';
 import icon from '../../image/iconSkokov.png';
 import blogImg from '../../image/blogImg.png';
@@ -11,8 +11,25 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 
 const User = () => {
+    const onClickButton = () => {
+        console.log('55555555555555555yyyyyyyyyyyyyyyy');
+    };
+    const onChangeCheckbox = e => {
+        console.log('111111111111111111');
+        console.log(e.target.checked);
+    };
     return (
         <div className={styles.global}>
+            <div>
+                <Button type="primary" onClick={onClickButton}>
+                    Primary
+                </Button>
+                <Button type="primary" disabled>
+                    Primary(disabled)
+                </Button>
+                <Checkbox onChange={onChangeCheckbox}>54454</Checkbox>
+            </div>
+
             <div className={styles.firstLine}>
                 <div className={styles.firstImgOuter}>
                     <img src={icon} className={styles.iconSkokov} />
@@ -25,7 +42,7 @@ const User = () => {
                     <div className={styles.aboutUs}>关于我们</div>
                     <div className={styles.aboutUs}>关于我们</div>
                 </div>
-                <div classname={styles.clear}></div>
+                <div className={styles.clear}></div>
             </div>
             <div className={styles.secondLine}>
                 <img src={blogImg} className={styles.blogImg} />
@@ -294,7 +311,7 @@ const User = () => {
                 </div>
                 <div className={styles.clear}></div>
             </div>
-            <div classname={styles.clear}></div>
+            <div className={styles.clear}></div>
         </div>
     );
 };
