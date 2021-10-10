@@ -18,6 +18,11 @@ const User = () => {
         console.log('111111111111111111');
         console.log(e.target.checked);
     };
+    const [loadings, setLoadings] = useState(1);
+    const onClickAddLoadings = () => {
+        let newLoadings = loadings + 1;
+        setLoadings(newLoadings);
+    };
     return (
         <div className={styles.global}>
             <div>
@@ -28,6 +33,9 @@ const User = () => {
                     Primary(disabled)
                 </Button>
                 <Checkbox onChange={onChangeCheckbox}>54454</Checkbox>
+                <Button type="primary" onClick={onClickAddLoadings}>
+                    {loadings}
+                </Button>
             </div>
 
             <div className={styles.firstLine}>
