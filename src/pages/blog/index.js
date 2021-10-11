@@ -318,6 +318,20 @@ const Blog = () => {
                 </div>
                 <div className={styles.clear}></div>
             </div>
+            <div className={styles.catalog}>
+                <div className={styles.pageUp}>上一页</div>
+                <div className={styles.pageNumberOne}>1</div>
+                <div className={styles.pageNumber}>2</div>
+                <div className={styles.pageNumber}>3</div>
+                <div className={styles.pageNumber}>4</div>
+                <div className={styles.pageNumber}>5</div>
+                <div className={styles.pageNumber}>...</div>
+                <div className={styles.pageNumber}>19</div>
+                <div className={styles.pageNumber}>20</div>
+                <div className={styles.pageDown}>下一页</div>
+            </div>
+            <div className={styles.Other}></div>
+            <div className={styles.endLine}></div>
             <div className={styles.clear}></div>
         </div>
     );
