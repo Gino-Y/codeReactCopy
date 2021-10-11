@@ -176,6 +176,7 @@ const Blog = () => {
                 </div>
                 <div className={styles.clear}></div>
             </div>
+
             <div className={styles.secondLine}>
                 <img src={blogImg} className={styles.blogImg} />
             </div>
