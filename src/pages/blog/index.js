@@ -1,5 +1,15 @@
 import React, { useCallback, useMomo, useState } from 'react';
-import { Button, Tooltip, Radio, Input, Space, Carousel, Checkbox } from 'antd';
+import {
+    Button,
+    Tooltip,
+    Radio,
+    Input,
+    Space,
+    Carousel,
+    Checkbox,
+    Menu,
+    Dropdown,
+} from 'antd';
 import styles from './index.less';
 import icon from '../../image/iconSkokov.png';
 import blogImg from '../../image/blogImg.png';
@@ -11,6 +21,99 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 
 const Blog = () => {
+    const teamMenu = (
+        <Menu>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.antgroup.com"
+                >
+                    团队1
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.aliyun.com"
+                >
+                    团队2
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.luohanacademy.com"
+                >
+                    团队3
+                </a>
+            </Menu.Item>
+        </Menu>
+    );
+    const blogsMenu = (
+        <Menu>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.antgroup.com"
+                >
+                    博客1
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.aliyun.com"
+                >
+                    博客2
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.luohanacademy.com"
+                >
+                    博客3
+                </a>
+            </Menu.Item>
+        </Menu>
+    );
+    const aboutUsMenu = (
+        <Menu>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.antgroup.com"
+                >
+                    关于我们1
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.aliyun.com"
+                >
+                    关于我们2
+                </a>
+            </Menu.Item>
+            <Menu.Item>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.luohanacademy.com"
+                >
+                    关于我们3
+                </a>
+            </Menu.Item>
+        </Menu>
+    );
     const onClickButton = () => {
         console.log('55555555555555555yyyyyyyyyyyyyyyy');
     };
@@ -44,10 +147,32 @@ const Blog = () => {
 
                 <div className={styles.firstTow}>
                     <div className={styles.homePage}>首页</div>
-                    <div className={styles.team}>团队</div>
-                    <div className={styles.blogs}>博客</div>
-                    <div className={styles.aboutUs}>关于我们</div>
-                    <div className={styles.aboutUs}>关于我们</div>
+                    <div className={styles.team}>
+                        <Dropdown overlay={teamMenu} placement="bottomCenter">
+                            <Button type="text">团队</Button>
+                        </Dropdown>
+                    </div>
+                    <div className={styles.blogs}>
+                        <Dropdown overlay={blogsMenu} placement="bottomCenter">
+                            <Button type="text">博客</Button>
+                        </Dropdown>
+                    </div>
+                    <div className={styles.aboutUs}>
+                        <Dropdown
+                            overlay={aboutUsMenu}
+                            placement="bottomCenter"
+                        >
+                            <Button type="text">关于我们</Button>
+                        </Dropdown>
+                    </div>
+                    <div className={styles.aboutUs}>
+                        <Dropdown
+                            overlay={aboutUsMenu}
+                            placement="bottomCenter"
+                        >
+                            <Button type="text">关于我们</Button>
+                        </Dropdown>
+                    </div>
                 </div>
                 <div className={styles.clear}></div>
             </div>
