@@ -15,7 +15,9 @@ import styles from './index.less';
 const Blog = () => {
     return (
         <div className={styles.global}>
-            <div className={styles.firstLine}></div>
+            <div className={styles.firstLine}>
+                <div className={}></div>
+            </div>
             <div className={styles.secondLine}></div>
             <div className={styles.thirdLine}></div>
             <div className={styles.fourthLine}></div>
