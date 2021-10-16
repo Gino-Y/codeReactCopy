@@ -16,7 +16,7 @@ const Blog = () => {
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
-                <div className={}></div>
+                <div></div>
             </div>
             <div className={styles.secondLine}></div>
             <div className={styles.thirdLine}></div>
