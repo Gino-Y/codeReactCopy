@@ -1,8 +1,8 @@
 export default {
-    namespace: 'product',
+    namespace: 'blog01',
     state: {
         userMain: {
-            show: 'productShow',
+            show: 'blog01Show',
         },
     },
     reducers: {
