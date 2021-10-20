@@ -26,6 +26,10 @@ import girlxx01 from '../../image/girlxx01.png';
 
 import imgJnb01 from '../../image/imgJnb01.png';
 
+function SettingOutlined() {
+    return null;
+}
+
 const Product = () => {
     const contentStyle = {
         height: '160px',
@@ -81,6 +85,14 @@ const Product = () => {
                 <div className={styles.text}>
                     <div className={styles.textIcon}>
                         <IconFont type="icon-tuichu" />
+                    </div>
+                    <div className={styles.textTitle}>
+                        FWERWEFSDFSDGERTERTSDGGDFG
+                    </div>
+                    <div className={styles.textContent}>
+                        lsdjflsajkfueha,mncvhiurhdkhjawfsldjlfja
+                        siwoijefodsaofji wejofjwoeifjwoefweifjwoeifjwoeif
+                        jwofsdahahfweua
                     </div>
                 </div>
                 <div className={styles.text}></div>
