@@ -125,7 +125,9 @@ const Home = () => {
                     <div className={styles.homePage}>首页</div>
                     <div className={styles.team}>
                         <Dropdown overlay={teamMenu} placement="bottomCenter">
-                            <Button type="text">团队</Button>
+                            <Button className={styles.buttenStyle} type="text">
+                                团队
+                            </Button>
                         </Dropdown>
                     </div>
                     <div className={styles.blogs}>

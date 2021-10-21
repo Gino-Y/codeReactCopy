@@ -16,6 +16,7 @@ import {
     SearchOutlined,
     UserOutlined,
     createFromIconfontCN,
+    SettingOutlined,
 } from '@ant-design/icons';
 import styles from './index.less';
 import icon from '../../image/iconSkokov.png';
@@ -25,10 +26,6 @@ import img03 from '../../image/img03.png';
 import girlxx01 from '../../image/girlxx01.png';
 
 import imgJnb01 from '../../image/imgJnb01.png';
-
-function SettingOutlined() {
-    return null;
-}
 
 const Product = () => {
     const contentStyle = {
@@ -84,15 +81,14 @@ const Product = () => {
             <div className={styles.imgTop}>
                 <div className={styles.text}>
                     <div className={styles.textIcon}>
-                        <IconFont type="icon-tuichu" />
+                        <SettingOutlined className={styles.iconImage} />
                     </div>
                     <div className={styles.textTitle}>
                         FWERWEFSDFSDGERTERTSDGGDFG
                     </div>
                     <div className={styles.textContent}>
-                        lsdjflsajkfueha,mncvhiurhdkhjawfsldjlfja
-                        siwoijefodsaofji wejofjwoeifjwoefweifjwoeifjwoeif
-                        jwofsdahahfweua
+                        lsdjflsajkfueha,mncvhiurhdkhjawfsldjlfjasiwoijefodsaofji
+                        wejofjwoeifjwoefweifjwoeifjwoeif jwofsdahahfweua
                     </div>
                 </div>
                 <div className={styles.text}></div>
