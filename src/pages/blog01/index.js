@@ -19,6 +19,7 @@ import img01 from '../../image/img01.png';
 import img02 from '../../image/img02.png';
 import img03 from '../../image/img03.png';
 import girlxx01 from '../../image/girlxx01.png';
+import CommonChildComponent1 from '../../libs/commonChildComponent1/commonChildComponent1.js';
 
 const Blog01 = () => {
     const contentStyle = {
@@ -136,6 +137,7 @@ const Blog01 = () => {
             {/*<div className={styles.seventhLine}></div>*/}
             {/*<div className={styles.Other}></div>*/}
             {/*<div className={styles.endLine}></div>*/}
+            <CommonChildComponent1 />
         </div>
     );
 };

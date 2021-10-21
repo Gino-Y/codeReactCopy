@@ -132,7 +132,9 @@ const Home = () => {
                     </div>
                     <div className={styles.blogs}>
                         <Dropdown overlay={blogsMenu} placement="bottomCenter">
-                            <Button type="text">博客</Button>
+                            <Button className={styles.buttenStyle} type="text">
+                                博客
+                            </Button>
                         </Dropdown>
                     </div>
                     <div className={styles.aboutUs}>
@@ -140,11 +142,15 @@ const Home = () => {
                             overlay={aboutUsMenu}
                             placement="bottomCenter"
                         >
-                            <Button type="text">关于我们</Button>
+                            <Button className={styles.buttenStyle} type="text">
+                                关于我们
+                            </Button>
                         </Dropdown>
                     </div>
                     <div className={styles.aboutUs}>
-                        <Button type="text">联系我们</Button>
+                        <Button className={styles.buttenStyle} type="text">
+                            联系我们
+                        </Button>
                     </div>
                 </div>
                 <div className={styles.clear}></div>
@@ -226,6 +232,7 @@ const Home = () => {
                                 explosion of ilimints floating around the
                                 screen.
                             </div>
+                            <div className={styles.clear}></div>
                         </div>
                         <div className={styles.like}>❤ 15</div>
                         <div className={styles.info}>
@@ -254,6 +261,7 @@ const Home = () => {
                                 explosion of ilimints floating around the
                                 screen.
                             </div>
+                            <div className={styles.clear}></div>
                         </div>
                         <div className={styles.like}>❤ 15</div>
                         <div className={styles.info}>
@@ -278,6 +286,7 @@ const Home = () => {
                                 explosion of ilimints floating around the
                                 screen.
                             </div>
+                            <div className={styles.clear}></div>
                         </div>
                         <div className={styles.like}>❤ 15</div>
                         <div className={styles.info}>
@@ -303,6 +312,7 @@ const Home = () => {
                                 explosion of ilimints floating around the
                                 screen.
                             </div>
+                            <div className={styles.clear}></div>
                         </div>
                         <div className={styles.like}>❤ 15</div>
                         <div className={styles.info}>
@@ -319,45 +329,55 @@ const Home = () => {
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>2016年11月22号</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>
                             SKOKOV制作的顺应企业的主题
                         </div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>网页设计</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>
                             IE浏览器、火狐浏览器、谷歌浏览器
                         </div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>
                             WORDPRESS 3.5、WORDPRESS 3.6
                         </div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>客户效应</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>商标效应</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>独特的ICONS</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>预期目标</div>
+                        <div className={styles.clear}></div>
                     </div>
+                    <div className={styles.clear}></div>
                 </div>
                 <div className={styles.suggest}>
                     <div className={styles.tag}>受欢迎的项目案例</div>
@@ -370,6 +390,7 @@ const Home = () => {
                         </div>
                         <div className={styles.tinyDate}>Oct.10.2013</div>
                         <div className={styles.tinyLike}>❤21</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.projectBrief}>
                         <div className={styles.tinyImg}>
@@ -380,6 +401,7 @@ const Home = () => {
                         </div>
                         <div className={styles.tinyDate}>Oct.10.2013</div>
                         <div className={styles.tinyLike}>❤21</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.projectBrief}>
                         <div className={styles.tinyImg}>
@@ -390,6 +412,7 @@ const Home = () => {
                         </div>
                         <div className={styles.tinyDate}>Oct.10.2013</div>
                         <div className={styles.tinyLike}>❤21</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.projectBrief}>
                         <div className={styles.tinyImg}>
@@ -400,6 +423,7 @@ const Home = () => {
                         </div>
                         <div className={styles.tinyDate}>Oct.10.2013</div>
                         <div className={styles.tinyLike}>❤21</div>
+                        <div className={styles.clear}></div>
                     </div>
                     <div className={styles.projectBrief}>
                         <div className={styles.tinyImg}>
@@ -410,6 +434,7 @@ const Home = () => {
                         </div>
                         <div className={styles.tinyDate}>Oct.10.2013</div>
                         <div className={styles.tinyLike}>❤21</div>
+                        <div className={styles.clear}></div>
                     </div>
                 </div>
                 <div className={styles.label}>
@@ -428,8 +453,16 @@ const Home = () => {
                 <div className={styles.pageNumber}>19</div>
                 <div className={styles.pageNumber}>20</div>
                 <div className={styles.pageDown}>下一页</div>
+                <div className={styles.clear}></div>
             </div>
-            <div className={styles.Other}></div>
+            <div className={styles.Other}>
+                <div className={styles.bottomLift}>
+                    <div className={styles.bottomAboutUs}>关于我们</div>
+                    <div className={styles.bottomContent}>
+                        近日，朝阳公安分局接群众举报称，有人在朝阳某小区卖淫嫖娼。对此，警方依法开展调查，将卖淫违法人员陈某卉（女，29岁），嫖娼违法人员李某迪（男，39岁）查获。经审查，上述人员对违法事实供认不讳，目前均已被朝阳公安分局依法行政拘留。
+                    </div>
+                </div>
+            </div>
             <div className={styles.endLine}></div>
             <div className={styles.clear}></div>
         </div>
