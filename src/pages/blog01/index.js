@@ -20,6 +20,7 @@ import img02 from '../../image/img02.png';
 import img03 from '../../image/img03.png';
 import girlxx01 from '../../image/girlxx01.png';
 import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent';
+import BlogHead from '../../libs/blogHead/blogHead';
 
 const Blog01 = () => {
     const contentStyle = {
@@ -31,39 +32,7 @@ const Blog01 = () => {
     };
     return (
         <div className={styles.global}>
-            <div className={styles.firstLine}>
-                <div className={styles.iconOuter}>
-                    <img src={icon} className={styles.iconSkokov} />
-                </div>
-                <div className={styles.buttonLeft}>
-                    <div className={styles.buttonOuter}>
-                        <Button type="text">灵感</Button>
-                    </div>
-                    <div className={styles.buttonOuter}>
-                        <Button type="text">学习</Button>
-                    </div>
-                    <div className={styles.buttonOuter}>
-                        <Button type="text">应聘</Button>
-                    </div>
-                </div>
-                <div className={styles.buttonRight}>
-                    <div className={styles.buttonOuter}>
-                        <Tooltip title="search">
-                            <Button
-                                shape="circle"
-                                icon={<SearchOutlined />}
-                                size="large"
-                            />
-                        </Tooltip>
-                    </div>
-                    <div className={styles.buttonOuter}>
-                        <Button type="text">登陆</Button>
-                    </div>
-                    <div className={styles.buttonOuter}>
-                        <Button type="primary">注册</Button>
-                    </div>
-                </div>
-            </div>
+            <BlogHead />
             <div className={styles.secondLine}>
                 <div className={styles.secondLineInter}>
                     <div className={styles.avatar}>
