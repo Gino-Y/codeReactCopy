@@ -19,7 +19,7 @@ import img01 from '../../image/imgC01.jpg';
 import img02 from '../../image/imgC02.jpg';
 import img03 from '../../image/imgC03.jpg';
 import girlxx03 from '../../image/girlxx03.png';
-import CopyrightComponent from '../../libs/CopyrightComponent/CopyrightComponent';
+import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent';
 
 const Blog03 = () => {
     const contentStyle = {
@@ -133,9 +133,9 @@ const Blog03 = () => {
                     <Avatar size={64} icon={<UserOutlined />} src={girlxx03} />
                 </Divider>
             </div>
-            <CopyrightComponent />
+            <CopyRightComponent />
             {/*<div className={styles.seventhLine}></div>*/}
-            {/*<div className={styles.Other}></div>*/}
+            {/*<div className={styles.other}></div>*/}
             {/*<div className={styles.endLine}></div>*/}
         </div>
     );

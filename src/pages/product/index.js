@@ -98,7 +98,7 @@ const Product = () => {
             <div className={styles.fifthLine}></div>
             <div className={styles.sixthLine}></div>
             {/*<div className={styles.seventhLine}></div>*/}
-            {/*<div className={styles.Other}></div>*/}
+            {/*<div className={styles.other}></div>*/}
             {/*<div className={styles.endLine}></div>*/}
         </div>
     );

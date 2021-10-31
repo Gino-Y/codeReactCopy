@@ -19,7 +19,7 @@ import girlxx03 from '../../image/girlxx03.png';
 import girlxx04 from '../../image/girlxx04.png';
 import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
-import CopyrightComponent from '../../libs/copyrightComponent/copyrightComponent.js';
+import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent.js';
 
 const Home = () => {
     const teamMenu = (
@@ -457,7 +457,7 @@ const Home = () => {
                 <div className={styles.clear}></div>
             </div>
 
-            {/*<div className={styles.Other}>*/}
+            {/*<div className={styles.other}>*/}
             {/*    <div className={styles.bottomLift}>*/}
             {/*        <div className={styles.bottomAboutUs}>关于我们</div>*/}
             {/*        <div className={styles.bottomContent}>*/}
@@ -465,7 +465,7 @@ const Home = () => {
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            <CopyrightComponent />
+            <CopyRightComponent />
             <div className={styles.endLine}></div>
             <div className={styles.clear}></div>
         </div>

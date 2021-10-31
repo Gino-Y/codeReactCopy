@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './copyrightComponent.less';
+import styles from './copyRightComponent.less';
 
-const CopyrightComponent = () => {
+const CopyRightComponent = () => {
     return (
-        <div className={styles.Other}>
+        <div className={styles.other}>
             <div className={styles.bottomLift}>
                 <div className={styles.bottomAboutUs}>关于我们</div>
                 <div className={styles.bottomContent}>
@@ -13,4 +13,4 @@ const CopyrightComponent = () => {
         </div>
     );
 };
-export default CopyrightComponent;
+export default CopyRightComponent;

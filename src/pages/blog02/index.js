@@ -19,7 +19,7 @@ import img01 from '../../image/imgB01.jpg';
 import img02 from '../../image/imgB02.jpg';
 import img03 from '../../image/imgB03.jpg';
 import girlxx02 from '../../image/girlxx02.png';
-import CopyrightComponent from '../../libs/CopyrightComponent/CopyrightComponent';
+import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent';
 
 const Blog02 = () => {
     const contentStyle = {
@@ -133,7 +133,7 @@ const Blog02 = () => {
                     <Avatar size={64} icon={<UserOutlined />} src={girlxx02} />
                 </Divider>
             </div>
-            <CopyrightComponent />
+            <CopyRightComponent />
         </div>
     );
 };
