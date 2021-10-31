@@ -14,7 +14,6 @@ import {
 } from 'antd';
 import { SearchOutlined, UserOutlined } from '@ant-design/icons';
 import styles from './index.less';
-import icon from '../../image/iconSkokov.png';
 import img01 from '../../image/img01.png';
 import img02 from '../../image/img02.png';
 import img03 from '../../image/img03.png';
