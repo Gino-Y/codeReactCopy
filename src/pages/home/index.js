@@ -20,6 +20,7 @@ import girlxx04 from '../../image/girlxx04.png';
 import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent.js';
+import Brief from '../../libs/brief/brief.js';
 
 const Home = () => {
     const teamMenu = (
@@ -382,61 +383,37 @@ const Home = () => {
                 </div>
                 <div className={styles.suggest}>
                     <div className={styles.tag}>受欢迎的项目案例</div>
-                    <div className={styles.projectBrief}>
-                        <div className={styles.tinyImg}>
-                            <img src={girlxx04} className={styles.tinyImg} />
-                        </div>
-                        <div className={styles.tinyTag}>
-                            拉力三又开始了，看看我们准备了什么？网页设计
-                        </div>
-                        <div className={styles.tinyDate}>Oct.10.2013</div>
-                        <div className={styles.tinyLike}>❤21</div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.projectBrief}>
-                        <div className={styles.tinyImg}>
-                            <img src={girlxx02} className={styles.tinyImg} />
-                        </div>
-                        <div className={styles.tinyTag}>
-                            拉力三又开始了，看看我们准备了什么？网页设计
-                        </div>
-                        <div className={styles.tinyDate}>Oct.10.2013</div>
-                        <div className={styles.tinyLike}>❤21</div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.projectBrief}>
-                        <div className={styles.tinyImg}>
-                            <img src={girlxx03} className={styles.tinyImg} />
-                        </div>
-                        <div className={styles.tinyTag}>
-                            拉力三又开始了，看看我们准备了什么？网页设计
-                        </div>
-                        <div className={styles.tinyDate}>Oct.10.2013</div>
-                        <div className={styles.tinyLike}>❤21</div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.projectBrief}>
-                        <div className={styles.tinyImg}>
-                            <img src={girlxx04} className={styles.tinyImg} />
-                        </div>
-                        <div className={styles.tinyTag}>
-                            拉力三又开始了，看看我们准备了什么？网页设计
-                        </div>
-                        <div className={styles.tinyDate}>Oct.10.2013</div>
-                        <div className={styles.tinyLike}>❤21</div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.projectBrief}>
-                        <div className={styles.tinyImg}>
-                            <img src={girlxx05} className={styles.tinyImg} />
-                        </div>
-                        <div className={styles.tinyTag}>
-                            拉力三又开始了，看看我们准备了什么？网页设计
-                        </div>
-                        <div className={styles.tinyDate}>Oct.10.2013</div>
-                        <div className={styles.tinyLike}>❤21</div>
-                        <div className={styles.clear}></div>
-                    </div>
+
+                    <Brief
+                        imgSrc={girlxx02}
+                        text={'拉力三又开始了，看看我们准备了什么？网页设hao'}
+                        date={'Oct.10.2021'}
+                        loveNumber={'❤243'}
+                    />
+                    <Brief
+                        imgSrc={girlxx01}
+                        text={'拉力三又开始了，看看我们准备了什么？网页设计'}
+                        date={'Oct.11.2021'}
+                        loveNumber={'❤243'}
+                    />
+                    <Brief
+                        imgSrc={girlxx03}
+                        text={'拉力三又开始了，看看我们准备了什么？网页设计'}
+                        date={'Oct.12.2021'}
+                        loveNumber={'❤243'}
+                    />
+                    <Brief
+                        imgSrc={girlxx04}
+                        text={'拉力三又开始了，看看我们准备了什么？网页设计'}
+                        date={'Oct.01.2021'}
+                        loveNumber={'❤243'}
+                    />
+                    <Brief
+                        imgSrc={girlxx05}
+                        text={'拉力三又开始了，看看我们准备了什么？网页设计'}
+                        date={'Oct.02.20132'}
+                        loveNumber={'❤243'}
+                    />
                 </div>
                 <div className={styles.label}>
                     <div className={styles.tag}>标签</div>
@@ -457,14 +434,6 @@ const Home = () => {
                 <div className={styles.clear}></div>
             </div>
 
-            {/*<div className={styles.other}>*/}
-            {/*    <div className={styles.bottomLift}>*/}
-            {/*        <div className={styles.bottomAboutUs}>关于我们</div>*/}
-            {/*        <div className={styles.bottomContent}>*/}
-            {/*            近日，朝阳公安分局接群众举报称，有人在朝阳某小区卖淫嫖娼。对此，警方依法开展调查，将卖淫违法人员陈某卉（女，29岁），嫖娼违法人员李某迪（男，39岁）查获。经审查，上述人员对违法事实供认不讳，目前均已被朝阳公安分局依法行政拘留。*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <CopyRightComponent />
             <div className={styles.endLine}></div>
             <div className={styles.clear}></div>
