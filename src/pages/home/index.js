@@ -21,6 +21,7 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent.js';
 import Brief from '../../libs/brief/brief.js';
+import BlogBox from '../../libs/blogBox/blogBox.js';
 
 const Home = () => {
     const teamMenu = (
@@ -167,161 +168,69 @@ const Home = () => {
                         “这里的资源库虽然不大，虽然没有什么权威，但是都是些可以举一反三的致命素材”.
                         <div className={styles.littleFont}>John Wooden</div>
                     </div>
-                    <div className={styles.blogBox}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx01} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.blogBox}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx02} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.blogBox}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx03} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                            <div className={styles.clear}></div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.clear}></div>
+                    <BlogBox
+                        img={girlxx01}
+                        textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                        occupation={'平面设计'}
+                        textContent={
+                            'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                        }
+                        loveNumber={'❤ 15'}
+                        date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                    />
+                    <BlogBox
+                        img={girlxx02}
+                        textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                        occupation={'平面设计'}
+                        textContent={
+                            'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                        }
+                        loveNumber={'❤ 15'}
+                        date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                    />
+                    <BlogBox
+                        img={girlxx03}
+                        textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                        occupation={'平面设计'}
+                        textContent={
+                            'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                        }
+                        loveNumber={'❤ 15'}
+                        date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                    />
                 </div>
                 <div className={styles.mainBox}>
-                    <div className={styles.blogBoxT2}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx04} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                            <div className={styles.clear}></div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.blogBox}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx05} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                            <div className={styles.clear}></div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                        <div className={styles.clear}></div>
-                    </div>
-                    <div className={styles.blogBox}>
-                        <div className={styles.imgBox}>
-                            <img src={girlxx06} className={styles.girlImg} />
-                        </div>
-                        <div className={styles.content}>
-                            <div className={styles.introduction}>
-                                令人鼓舞的动感体验！发自内心的飘逸~
-                                <br />
-                                平面设计
-                            </div>
-                            <div className={styles.introductionOne}>
-                                When it comes to parallax scrolling,the that
-                                separates good and bad choices is pretty thin. A
-                                while back parallax was being used to deliver an
-                                explosion of ilimints floating around the
-                                screen.
-                            </div>
-                            <div className={styles.clear}></div>
-                        </div>
-                        <div className={styles.like}>❤ 15</div>
-                        <div className={styles.info}>
-                            by John Doe / 4 comments / Oct. 12. 2013
-                        </div>
-                        <div className={styles.clear}></div>
-                        <div className={styles.clear}></div>
+                    <div className={styles.boxFix}>
+                        <BlogBox
+                            img={girlxx04}
+                            textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                            occupation={'平面设计'}
+                            textContent={
+                                'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                            }
+                            loveNumber={'❤ 15'}
+                            date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                        />
+                        <BlogBox
+                            img={girlxx05}
+                            textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                            occupation={'平面设计'}
+                            textContent={
+                                'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                            }
+                            loveNumber={'❤ 15'}
+                            date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                        />
+                        <BlogBox
+                            img={girlxx06}
+                            textTop={'令人鼓舞的动感体验！发自内心的飘逸~'}
+                            occupation={'平面设计'}
+                            textContent={
+                                'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
+                            }
+                            loveNumber={'❤ 15'}
+                            date={'by John Doe / 4 comments / Oct. 12. 2013'}
+                        />
                     </div>
                     <div className={styles.clear}></div>
                 </div>
