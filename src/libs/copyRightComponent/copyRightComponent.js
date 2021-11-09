@@ -6,6 +6,7 @@ import girlxx03 from '../../image/girlxx03.png';
 import girlxx04 from '../../image/girlxx04.png';
 import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
+import { TwitterOutlined } from '@ant-design/icons';
 
 const CopyRightComponent = () => {
     return (
@@ -13,7 +14,7 @@ const CopyRightComponent = () => {
             <div className={styles.bottomLift}>
                 <div className={styles.bottomAboutUs}>关于我们</div>
                 <div className={styles.bottomContent}>
-                    近日，朝阳公安分局接群众举报称，有人在朝阳某小区卖淫嫖娼。对此，警方依法开展调查，将卖淫违法人员陈某卉（女，29岁），嫖娼违法人员李某迪（男，39岁）查获。经审查，上述人员对违法事实供认不讳，目前均已被朝阳公安分局依法行政拘留。
+                    目前已竣工并投入生产，占地面积达40000m2，厂房面积近15000m2。公司2004年的年产值达4350多万元，并且每年以平均30%的速度快速增长。目前，本公司的产品已具备国际及国内多项质量认证证书，并为知名家用电器企业：小天鹅电器有限公司、三星电子有限公司、海尔集团、惠尔普等配套生产各类标牌。
                 </div>
                 <div className={styles.bottomAboutUs}>作品欣赏</div>
                 <div className={styles.photo}>
@@ -36,6 +37,24 @@ const CopyRightComponent = () => {
                         <img src={girlxx06} className={styles.girlImg} />
                     </div>
                 </div>
+                <div className={styles.clear}></div>
+            </div>
+            <div className={styles.bottomLift}>
+                <div className={styles.bottomAboutUs}>来自推特的祝福</div>
+                <div className={styles.twitterBox}>
+                    <div className={styles.twitter}>
+                        <div className={styles.twitterImg}>
+                            <TwitterOutlined />
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.clear}></div>
+            </div>
+            <div className={styles.bottomLift}>
+                <div className={styles.bottomAboutUs}>来自推特的祝福</div>
+                <div className={styles.twitterBox}>阿萨德</div>
+
                 <div className={styles.clear}></div>
             </div>
         </div>
