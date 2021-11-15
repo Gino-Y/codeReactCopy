@@ -3,10 +3,17 @@ import { Button, Tooltip, Radio, Input, Space, Carousel } from 'antd';
 import styles from './index.less';
 
 const Gino = () => {
+    const [test, setTest] = useState(0);
+    const onClickButton = () => {
+        let newTest = test + 1;
+        setTest(newTest);
+    };
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
-                <div className={styles.firstOne}>qwe123fgd</div>
+                <div className={styles.firstOne} onClick={onClickButton}>
+                    {test}
+                </div>
                 <div className={styles.secondOne}></div>
                 <div className={styles.thirdOne}></div>
                 <div classname={styles.clear}></div>
