@@ -68,17 +68,6 @@ const Blog = () => {
             <div className={styles.secondLine}>
                 <div className={styles.secondLineInter}>
                     <BlogRole img={girlxx01} name={'Gino'} job={'designer'} />
-                    {/*<div className={styles.avatar}>*/}
-                    {/*    <Avatar*/}
-                    {/*        size={64}*/}
-                    {/*        icon={<UserOutlined />}*/}
-                    {/*        src={girlxx01}*/}
-                    {/*    />*/}
-                    {/*</div>*/}
-                    {/*<div className={styles.nameJob}>*/}
-                    {/*    <div className={styles.name}>Gino</div>*/}
-                    {/*    <div className={styles.job}>designer</div>*/}
-                    {/*</div>*/}
                     <div className={styles.buttonRight}>
                         <div className={styles.buttonOuter}>
                             <Button type={'dashed'}>收藏</Button>

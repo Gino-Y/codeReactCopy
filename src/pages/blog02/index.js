@@ -21,6 +21,8 @@ import img03 from '../../image/imgB03.jpg';
 import girlxx02 from '../../image/girlxx02.png';
 import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent';
 import BlogHead from '../../libs/blogHead/blogHead';
+import BlogRole from '../../libs/blogRole/blogRole';
+import girlxx01 from '../../image/girlxx01.png';
 
 const Blog02 = () => {
     const contentStyle = {
@@ -35,17 +37,7 @@ const Blog02 = () => {
             <BlogHead />
             <div className={styles.secondLine}>
                 <div className={styles.secondLineInter}>
-                    <div className={styles.avatar}>
-                        <Avatar
-                            size={64}
-                            icon={<UserOutlined />}
-                            src={girlxx02}
-                        />
-                    </div>
-                    <div className={styles.nameJob}>
-                        <div className={styles.name}>Gino</div>
-                        <div className={styles.job}>designer</div>
-                    </div>
+                    <BlogRole img={girlxx02} name={'Tina'} job={'designer'} />
                     <div className={styles.buttonRight}>
                         <div className={styles.buttonOuter}>
                             <Button type={'dashed'}>收藏</Button>
