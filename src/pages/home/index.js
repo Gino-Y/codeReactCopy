@@ -22,6 +22,7 @@ import girlxx06 from '../../image/girlxx06.png';
 import CopyRightComponent from '../../libs/copyRightComponent/copyRightComponent.js';
 import Brief from '../../libs/brief/brief.js';
 import BlogBox from '../../libs/blogBox/blogBox.js';
+import ProjectTag from '../../libs/projectTag/projectTag.js';
 
 const Home = () => {
     const teamMenu = (
@@ -237,11 +238,12 @@ const Home = () => {
                 <div className={styles.search}></div>
                 <div className={styles.suggest}>
                     <div className={styles.tag}>项目计划</div>
-                    <div className={styles.tagContent}>
-                        <div className={styles.tagIcon}>></div>
-                        <div className={styles.tagTex}>2016年11月22号</div>
-                        <div className={styles.clear}></div>
-                    </div>
+                    <ProjectTag text={'2016年11月22号'} />
+                    {/*<div className={styles.tagContent}>*/}
+                    {/*    <div className={styles.tagIcon}>></div>*/}
+                    {/*    <div className={styles.tagTex}>2016年11月22号</div>*/}
+                    {/*    <div className={styles.clear}></div>*/}
+                    {/*</div>*/}
                     <div className={styles.tagContent}>
                         <div className={styles.tagIcon}>></div>
                         <div className={styles.tagTex}>
