@@ -11,16 +11,27 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 
 const User = () => {
-    const [test, setTest] = useState([]);
-    const onClickButton = () => {
-        let newTest = [...test];
-        newTest.push('a');
-        setTest(newTest);
-    };
+    const [test, setTest] = useState({
+        name: 'lisi',
+        age: 34,
+        children: [
+            {
+                name: '张三儿子',
+                age: 12,
+                hobby: '足球',
+            },
+            {
+                name: '张三女儿',
+                age: 13,
+                hobby: '篮球',
+            },
+        ],
+    });
+
     return (
         <div className={styles.global}>
-            {test}
-            <div className={styles.button} onClick={onClickButton}></div>
+            {test.age}
+            <div className={styles.button}></div>
             <div className={styles.clear}></div>
         </div>
     );

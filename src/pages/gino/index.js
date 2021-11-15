@@ -19,6 +19,7 @@ const Gino = () => {
         newArray.push('a');
         setArray(newArray);
     };
+
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
