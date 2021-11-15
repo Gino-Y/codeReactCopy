@@ -8,27 +8,47 @@ const Gino = () => {
         let newTest = test + 1;
         setTest(newTest);
     };
+    const [str, setStr] = useState('a');
+    const onClickButtonStr = () => {
+        let newStr = str + 'a';
+        setStr(newStr);
+    };
+    const [array, setArray] = useState([]);
+    const onClickButtonArray = () => {
+        let newArray = [...array];
+        newArray.push('a');
+        setArray(newArray);
+    };
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
                 <div className={styles.firstOne} onClick={onClickButton}>
                     {test}
                 </div>
-                <div className={styles.secondOne}></div>
+                <div className={styles.secondOne} onClick={onClickButtonStr}>
+                    {str}
+                </div>
                 <div className={styles.thirdOne}></div>
                 <div classname={styles.clear}></div>
             </div>
             <div className={styles.secondLine}>
                 <div className={styles.firstTow}>
                     <div className={styles.firstA}>
-                        <div className={styles.firstAa}></div>
+                        <div
+                            className={styles.firstAa}
+                            onClick={onClickButtonArray}
+                        >
+                            {array}
+                        </div>
                         <div className={styles.firstBa}></div>
                         <div classname={styles.clear}></div>
                     </div>
                     <div className={styles.firstB}></div>
                     <div classname={styles.clear}></div>
                 </div>
-                <div className={styles.secondTow}></div>
+                <div className={styles.secondTow} onClick={onClickButtonArray}>
+                    {array}
+                </div>
                 <div classname={styles.clear}></div>
             </div>
             <div className={styles.thirdLine}>

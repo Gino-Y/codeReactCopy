@@ -11,9 +11,10 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 
 const User = () => {
-    const [test, setTest] = useState(300);
+    const [test, setTest] = useState([]);
     const onClickButton = () => {
-        let newTest = test + 1;
+        let newTest = [...test];
+        newTest.push('a');
         setTest(newTest);
     };
     return (
