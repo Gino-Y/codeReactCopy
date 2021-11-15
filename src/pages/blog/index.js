@@ -67,7 +67,7 @@ const Blog = () => {
             </div>
             <div className={styles.secondLine}>
                 <div className={styles.secondLineInter}>
-                    <blogRole img={girlxx01} name={'Gino'} job={'designer'} />
+                    <BlogRole img={girlxx01} name={'Gino'} job={'designer'} />
                     {/*<div className={styles.avatar}>*/}
                     {/*    <Avatar*/}
                     {/*        size={64}*/}
