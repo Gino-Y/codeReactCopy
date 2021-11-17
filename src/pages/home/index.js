@@ -176,7 +176,7 @@ const Home = () => {
                         textContent={
                             'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
                         }
-                        loveNumber={'❤ 15'}
+                        loveNumber={'❤ 22'}
                         date={'by John Doe / 4 comments / Oct. 12. 2013'}
                     />
                     <BlogBox
@@ -196,7 +196,7 @@ const Home = () => {
                         textContent={
                             'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
                         }
-                        loveNumber={'❤ 15'}
+                        loveNumber={'❤ 9'}
                         date={'by John Doe / 4 comments / Oct. 12. 2013'}
                     />
                 </div>
@@ -209,7 +209,7 @@ const Home = () => {
                             textContent={
                                 'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
                             }
-                            loveNumber={'❤ 15'}
+                            loveNumber={'❤ 32'}
                             date={'by John Doe / 4 comments / Oct. 12. 2013'}
                         />
                         <BlogBox
@@ -229,7 +229,7 @@ const Home = () => {
                             textContent={
                                 'When it comes to parallax scrolling,the that separates good and bad choices is pretty thin. Awhile back parallax was being used to deliver an explosion of ilimints floating around the screen.'
                             }
-                            loveNumber={'❤ 15'}
+                            loveNumber={'❤ 18'}
                             date={'by John Doe / 4 comments / Oct. 12. 2013'}
                         />
                     </div>
@@ -299,31 +299,31 @@ const Home = () => {
                         imgSrc={girlxx02}
                         text={'拉力三又开始了，看看我们准备了什么？网页设hao'}
                         date={'Oct.10.2021'}
-                        loveNumber={'❤243'}
+                        loveNumber={'❤24'}
                     />
                     <Brief
                         imgSrc={girlxx01}
                         text={'拉力三又开始了，看看我们准备了什么？网页设计'}
                         date={'Oct.11.2021'}
-                        loveNumber={'❤243'}
+                        loveNumber={'❤23'}
                     />
                     <Brief
                         imgSrc={girlxx03}
                         text={'拉力三又开始了，看看我们准备了什么？网页设计'}
                         date={'Oct.12.2021'}
-                        loveNumber={'❤243'}
+                        loveNumber={'❤43'}
                     />
                     <Brief
                         imgSrc={girlxx04}
                         text={'拉力三又开始了，看看我们准备了什么？网页设计'}
                         date={'Oct.01.2021'}
-                        loveNumber={'❤243'}
+                        loveNumber={'❤25'}
                     />
                     <Brief
                         imgSrc={girlxx05}
                         text={'拉力三又开始了，看看我们准备了什么？网页设计'}
                         date={'Oct.02.20132'}
-                        loveNumber={'❤243'}
+                        loveNumber={'❤18'}
                     />
                 </div>
                 <div className={styles.label}>

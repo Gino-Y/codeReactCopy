@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './blogBox.less';
-import girlxx01 from '../../image/girlxx01.png';
 
 const BlogBox = ({
     img,

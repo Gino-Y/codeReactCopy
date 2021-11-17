@@ -7,6 +7,7 @@ import girlxx04 from '../../image/girlxx04.png';
 import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 import { TwitterOutlined } from '@ant-design/icons';
+import { Twitter } from '../twitter/twitter.js';
 
 const CopyRightComponent = () => {
     return (
@@ -42,9 +43,19 @@ const CopyRightComponent = () => {
             <div className={styles.bottomLift}>
                 <div className={styles.bottomAboutUs}>来自推特的祝福</div>
                 <div className={styles.twitterBox}>
+                    {/*<Twitter/>*/}
                     <div className={styles.twitter}>
                         <div className={styles.twitterImg}>
                             <TwitterOutlined />
+                        </div>
+                        <div className={styles.twitterText}>
+                            Check Out Dtbaker's
+                        </div>
+                        <div className={styles.twitterText}>
+                            http://t.co/WBFKIWHJ
+                        </div>
+                        <div className={styles.twitterTextLittle}>
+                            3 days ago
                         </div>
                     </div>
                 </div>
