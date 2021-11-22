@@ -14,23 +14,26 @@ const User = () => {
     const [test, setTest] = useState({
         name: 'lisi',
         age: 34,
-        children: [
-            {
-                name: '张三儿子',
-                age: 12,
-                hobby: '足球',
-            },
-            {
-                name: '张三女儿',
-                age: 13,
-                hobby: '篮球',
-            },
-        ],
+        hobby: '足球',
     });
 
+    const onClickTest = () => {
+        let newTest = {
+            ...test,
+            name: 'mike',
+        };
+        newTest.age = test.age + 1;
+        setTest(newTest);
+    };
+
     return (
-        <div className={styles.global}>
+        <div className={styles.global} onClick={onClickTest}>
+            {test.name}
+            <br />
             {test.age}
+            <br />
+            {test.hobby}
+            <br />
             <div className={styles.button}></div>
             <div className={styles.clear}></div>
         </div>

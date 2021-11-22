@@ -20,6 +20,21 @@ const Gino = () => {
         setArray(newArray);
     };
 
+    const [testObject, setTestObject] = useState({
+        name: 'lisi',
+        age: 34,
+        hobby: '足球',
+    });
+
+    const onClickTestObject = () => {
+        let newTestObject = {
+            ...testObject,
+            name: 'wangwu',
+        };
+        newTestObject.age = testObject.age + 1;
+        setTestObject(newTestObject);
+    };
+
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
@@ -41,7 +56,17 @@ const Gino = () => {
                         >
                             {array}
                         </div>
-                        <div className={styles.firstBa}></div>
+                        <div
+                            className={styles.firstBa}
+                            onClick={onClickTestObject}
+                        >
+                            {testObject.name}
+                            <br />
+                            {testObject.age}
+                            <br />
+                            {testObject.hobby}
+                            <br />
+                        </div>
                         <div classname={styles.clear}></div>
                     </div>
                     <div className={styles.firstB}></div>
