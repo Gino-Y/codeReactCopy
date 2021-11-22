@@ -29,10 +29,28 @@ const User = () => {
         },
     ]);
 
+    // const [test, setTest] = useState([{
+    //     name: '张三',
+    //     age: 12,
+    //     hobby: '足球',
+    // },{
+    //     name: '王五',
+    //     age: 56,
+    //     hobby: '乒乓球',
+    // },{
+    //     name: '李四',
+    //     age: 34,
+    //     hobby: '篮球',
+    // }]);
+    // 必须用splice方法
     const onClickTest = () => {
         let newTest = [...test];
-        newTest[1].name = test[1].name + '1';
-        newTest[1].age = test[1].age + 1;
+        let item = {
+            ...test[1],
+        };
+        //newTest = [test[0],test[2],test[1]];
+        newTest.splice(1, 1);
+        newTest.push(item);
         setTest(newTest);
     };
 
