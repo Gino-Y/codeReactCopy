@@ -35,6 +35,29 @@ const Gino = () => {
         setTestObject(newTestObject);
     };
 
+    const [objectArray, setObjectArray] = useState([
+        {
+            name: '张三',
+            age: 23,
+            hobby: '足球',
+        },
+        {
+            name: '李四',
+            age: 32,
+            hobby: '足球',
+        },
+        {
+            name: '王五',
+            age: 25,
+            hobby: '足球',
+        },
+    ]);
+    const noClickObjectArray = () => {
+        let newObjectArray = [...objectArray];
+        newObjectArray[2].name = objectArray[2].name + 1;
+        newObjectArray[2].age = objectArray[2].age + 1;
+        setObjectArray(newObjectArray);
+    };
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
@@ -69,7 +92,14 @@ const Gino = () => {
                         </div>
                         <div classname={styles.clear}></div>
                     </div>
-                    <div className={styles.firstB}></div>
+                    <div className={styles.firstB} onClick={noClickObjectArray}>
+                        {objectArray[2].name}
+                        <br />
+                        {objectArray[2].age}
+                        <br />
+                        {objectArray[2].hobby}
+                        <br />
+                    </div>
                     <div classname={styles.clear}></div>
                 </div>
                 <div className={styles.secondTow} onClick={onClickButtonArray}>

@@ -11,28 +11,38 @@ import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
 
 const User = () => {
-    const [test, setTest] = useState({
-        name: 'lisi',
-        age: 34,
-        hobby: '足球',
-    });
+    const [test, setTest] = useState([
+        {
+            name: '张三',
+            age: 12,
+            hobby: '足球',
+        },
+        {
+            name: '李四',
+            age: 34,
+            hobby: '篮球',
+        },
+        {
+            name: '王五',
+            age: 56,
+            hobby: '乒乓球',
+        },
+    ]);
 
     const onClickTest = () => {
-        let newTest = {
-            ...test,
-            name: 'mike',
-        };
-        newTest.age = test.age + 1;
+        let newTest = [...test];
+        newTest[1].name = test[1].name + '1';
+        newTest[1].age = test[1].age + 1;
         setTest(newTest);
     };
 
     return (
         <div className={styles.global} onClick={onClickTest}>
-            {test.name}
+            {test[1].name}
             <br />
-            {test.age}
+            {test[1].age}
             <br />
-            {test.hobby}
+            {test[1].hobby}
             <br />
             <div className={styles.button}></div>
             <div className={styles.clear}></div>
