@@ -52,6 +52,49 @@ const Gino = () => {
             hobby: '足球',
         },
     ]);
+    const [complexData, set] = useState([
+        {
+            name: '张三',
+            age: 23,
+            hobby: '足球',
+            children: [
+                {
+                    name: '张三儿子',
+                    sex: '男孩',
+                },
+            ],
+            family: {
+                name: '张三老婆',
+                age: 32,
+            },
+        },
+        {
+            name: '李四',
+            age: 32,
+            hobby: '足球',
+            children: [
+                {
+                    name: '李四儿子',
+                    sex: '男孩',
+                },
+                {
+                    name: '李四女儿',
+                    sex: '女孩',
+                },
+            ],
+            family: {
+                name: '李四老婆',
+                age: 31,
+            },
+        },
+        {
+            name: '王五',
+            age: 25,
+            hobby: '足球',
+            children: [],
+            family: {},
+        },
+    ]);
     const noClickObjectArray = () => {
         let newObjectArray = [...objectArray];
         newObjectArray[2].name = objectArray[2].name + 1;

@@ -16,42 +16,47 @@ const User = () => {
             name: '张三',
             age: 12,
             hobby: '足球',
+            children: [
+                {
+                    name: '张三1',
+                    sex: '男孩',
+                },
+            ],
+            family: {
+                name: '张三老婆',
+                age: 32,
+            },
         },
         {
             name: '李四',
             age: 34,
             hobby: '篮球',
+            children: [
+                {
+                    name: '李四1',
+                    sex: '男孩',
+                },
+                {
+                    name: '李四2',
+                    sex: '女孩',
+                },
+            ],
+            family: {
+                name: '李四老婆',
+                age: 34,
+            },
         },
         {
             name: '王五',
             age: 56,
             hobby: '乒乓球',
+            children: [],
+            family: {},
         },
     ]);
 
-    // const [test, setTest] = useState([{
-    //     name: '张三',
-    //     age: 12,
-    //     hobby: '足球',
-    // },{
-    //     name: '王五',
-    //     age: 56,
-    //     hobby: '乒乓球',
-    // },{
-    //     name: '李四',
-    //     age: 34,
-    //     hobby: '篮球',
-    // }]);
-    // 必须用splice方法
     const onClickTest = () => {
         let newTest = [...test];
-        let item = {
-            ...test[1],
-        };
-        //newTest = [test[0],test[2],test[1]];
-        newTest.splice(1, 1);
-        newTest.push(item);
-        setTest(newTest);
     };
 
     return (
