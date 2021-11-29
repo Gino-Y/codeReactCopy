@@ -52,6 +52,13 @@ const Gino = () => {
             hobby: '足球',
         },
     ]);
+    const noClickObjectArray = () => {
+        let newObjectArray = [...objectArray];
+        newObjectArray[2].name = objectArray[2].name + 1;
+        newObjectArray[2].age = objectArray[2].age + 1;
+        setObjectArray(newObjectArray);
+    };
+
     const [complexData, set] = useState([
         {
             name: '张三',
@@ -95,12 +102,14 @@ const Gino = () => {
             family: {},
         },
     ]);
-    const noClickObjectArray = () => {
-        let newObjectArray = [...objectArray];
-        newObjectArray[2].name = objectArray[2].name + 1;
-        newObjectArray[2].age = objectArray[2].age + 1;
-        setObjectArray(newObjectArray);
+
+    const [boole, setBoole] = useState(false);
+
+    const onClickBoole = () => {
+        let newBoole = !boole;
+        setBoole(newBoole);
     };
+
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
@@ -151,7 +160,9 @@ const Gino = () => {
                 <div classname={styles.clear}></div>
             </div>
             <div className={styles.thirdLine}>
-                <div className={styles.firstThree}></div>
+                <div className={styles.firstThree} onClick={onClickBoole}>
+                    {boole.toString()}
+                </div>
                 <div className={styles.secondThree}></div>
                 <div classname={styles.clear}></div>
             </div>
