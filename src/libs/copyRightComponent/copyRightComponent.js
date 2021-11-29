@@ -6,7 +6,18 @@ import girlxx03 from '../../image/girlxx03.png';
 import girlxx04 from '../../image/girlxx04.png';
 import girlxx05 from '../../image/girlxx05.png';
 import girlxx06 from '../../image/girlxx06.png';
-import { TwitterOutlined } from '@ant-design/icons';
+import {
+    FacebookOutlined,
+    GooglePlusOutlined,
+    DingdingOutlined,
+    GithubOutlined,
+    ZhihuOutlined,
+    WeiboOutlined,
+    SkypeOutlined,
+    InstagramOutlined,
+    DribbbleOutlined,
+} from '@ant-design/icons';
+
 import Twitter from '../twitter/twitter.js';
 
 const CopyRightComponent = () => {
@@ -69,12 +80,49 @@ const CopyRightComponent = () => {
                         dates={'7 days ago'}
                     />
                 </div>
-                <div className={styles.bottomAboutUs}>在右邊單位關注我</div>
+                <div className={styles.bottomAboutUs}>
+                    <div className={styles.fontSimple}>在右面单位关注我</div>
+                    <div className={styles.iconSimple}>
+                        <div className={styles.companyIcon}>
+                            <FacebookOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <GooglePlusOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <DingdingOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <GithubOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <ZhihuOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <WeiboOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <SkypeOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <InstagramOutlined />
+                        </div>
+                        <div className={styles.companyIcon}>
+                            <DribbbleOutlined />
+                        </div>
+                    </div>
+                </div>
+
                 <div className={styles.clear}></div>
             </div>
             <div className={styles.bottomLift}>
-                <div className={styles.bottomAboutUs}>来自推特的祝福</div>
-                <div className={styles.twitterBox}>阿萨德</div>
+                <div className={styles.bottomAboutUs}>Contact info</div>
+                <div className={styles.twitterBox}>
+                    <div className={styles.contact}></div>
+                    <div className={styles.bottomAboutUs}></div>
+                    <div className={styles.fontLittle}></div>
+                    <div className={styles.message}></div>
+                </div>
 
                 <div className={styles.clear}></div>
             </div>
