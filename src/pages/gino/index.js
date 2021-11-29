@@ -110,6 +110,17 @@ const Gino = () => {
         setBoole(newBoole);
     };
 
+    const [booleNew, setBooleNew] = useState(false);
+
+    const onClickBooleNew = () => {
+        let newBooleNew = !booleNew;
+        setBooleNew(newBooleNew);
+    };
+    const getBooleNewChangeHtml = () => {
+        let newBooleNewChangeHtml = booleNew.toString() + 'abc';
+        return newBooleNewChangeHtml;
+    };
+
     return (
         <div className={styles.global}>
             <div className={styles.firstLine}>
@@ -163,7 +174,9 @@ const Gino = () => {
                 <div className={styles.firstThree} onClick={onClickBoole}>
                     {boole.toString()}
                 </div>
-                <div className={styles.secondThree}></div>
+                <div className={styles.secondThree} onClick={onClickBooleNew}>
+                    {getBooleNewChangeHtml()}
+                </div>
                 <div classname={styles.clear}></div>
             </div>
             <div className={styles.clear} />

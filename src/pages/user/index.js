@@ -17,11 +17,14 @@ const User = () => {
         let newTest = !test;
         setTest(newTest);
     };
+    const getTestChangeHtml = () => {
+        let newTestHtml = test.toString() + 'abc';
+        return newTestHtml;
+    };
 
     return (
         <div className={styles.global} onClick={onClickTest}>
-            {test.toString()}
-
+            {getTestChangeHtml()}
             <div className={styles.clear}></div>
         </div>
     );
