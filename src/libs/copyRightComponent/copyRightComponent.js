@@ -16,9 +16,16 @@ import {
     SkypeOutlined,
     InstagramOutlined,
     DribbbleOutlined,
+    EnvironmentFilled,
+    PhoneFilled,
+    MailFilled,
+    MailOutlined,
 } from '@ant-design/icons';
-
 import Twitter from '../twitter/twitter.js';
+
+import { Input, Space } from 'antd';
+const { Search } = Input;
+const onSearch = value => console.log(value);
 
 const CopyRightComponent = () => {
     return (
@@ -118,10 +125,45 @@ const CopyRightComponent = () => {
             <div className={styles.bottomLift}>
                 <div className={styles.bottomAboutUs}>Contact info</div>
                 <div className={styles.twitterBox}>
-                    <div className={styles.contact}></div>
-                    <div className={styles.bottomAboutUs}></div>
-                    <div className={styles.fontLittle}></div>
-                    <div className={styles.message}></div>
+                    <div className={styles.contact}>
+                        <div className={styles.contactTow}>
+                            <div className={styles.companyIcon}>
+                                <EnvironmentFilled />
+                            </div>
+                            <div className={styles.contactFont}>
+                                来自中关村环球影城大厦的问候
+                            </div>
+                        </div>
+                        <div className={styles.contactTow}>
+                            <div className={styles.companyIcon}>
+                                <PhoneFilled />
+                            </div>
+                            <div className={styles.contactFont}>
+                                Phone:+86 4008-789-789
+                            </div>
+                        </div>
+                        <div className={styles.contactTow}>
+                            <div className={styles.companyIcon}>
+                                <MailFilled />
+                            </div>
+                            <div className={styles.contactFont}>
+                                E-mail:freeforwebdesign@gamail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.bottomAboutUs}>
+                    跟随脚步！
+                    <div className={styles.fontLittle}>
+                        把你想说的以及对我们的爱写在下边，我们会尽心尽力创造出更好的项目！~
+                    </div>
+                    <div className={styles.message}>
+                        <Search
+                            placeholder="input search text"
+                            onSearch={onSearch}
+                            style={{ width: 200 }}
+                        />
+                    </div>
                 </div>
 
                 <div className={styles.clear}></div>
